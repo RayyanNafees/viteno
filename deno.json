@@ -1,0 +1,21 @@
+{
+  "tasks": {
+    "dev": "deno run -A npm:vite@5.1 . --config ./vite.config.mts",
+    "build": "deno run -A npm:vite@5.1 build . --config ./vite.config.mts",
+    "preview": "deno run -A npm:vite@5.1 preview . --config ./vite.config.mts",
+    "optimize": "deno run -A npm:vite@5.1 optimize . --config ./vite.config.mts"
+  },
+  "imports": {
+    "react": "https://esm.sh/react",
+    "react/": "https://esm.sh/react/",
+    "react-dom": "https://esm.sh/react-dom",
+    "react-dom/": "https://esm.sh/react-dom/",
+    "wouter": "https://esm.sh/wouter"
+  },
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "lib": ["dom", "deno.ns"],
+    "types": ["vite/client"]
+  }
+}
