@@ -1,5 +1,6 @@
 import { Route, Link, Switch } from 'wouter';
 import "./App.css";
+import 'react';
 
 function App() {
   return <>
